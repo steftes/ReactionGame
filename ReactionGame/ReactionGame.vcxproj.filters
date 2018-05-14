@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="IDigitalOutput.cpp" />
+    <ClCompile Include="IDigitalInput.cpp" />
+    <ClCompile Include="DummyOutput.cpp" />
+    <ClCompile Include="DummyInput.cpp" />
+    <ClCompile Include="IPlayer.cpp" />
+    <ClCompile Include="DummyPlayer.cpp" />
+    <ClCompile Include="DummyGameStatistic.cpp" />
+    <ClCompile Include="IGameStatistic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IDigitalOutput.h" />
+    <ClInclude Include="IDigitalInput.h" />
+    <ClInclude Include="DummyOutput.h" />
+    <ClInclude Include="DummyInput.h" />
+    <ClInclude Include="IPlayer.h" />
+    <ClInclude Include="DummyPlayer.h" />
+    <ClInclude Include="DummyGameStatistic.h" />
+    <ClInclude Include="IGameStatistic.h" />
+  </ItemGroup>
+</Project>
