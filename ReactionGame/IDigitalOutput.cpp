@@ -3,4 +3,4 @@
 
 #include "IDigitalOutput.h"
 
-IDigitalOutput::~IDigitalOutput() { }
+IDigital_output::~IDigital_output() { }

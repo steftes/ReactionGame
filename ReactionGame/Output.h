@@ -2,10 +2,10 @@
 
 #include "IDigitalOutput.h"
 
-class Dummy_output final : public IDigitalOutput {
+class Output final : public IDigital_output {
 public:
 	// constructor, default initial state is off
-	Dummy_output(bool initial_state = false);
+	Output(bool initial_state = false);
 
 	virtual void turn_on(int led) override;
 

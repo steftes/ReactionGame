@@ -1,4 +1,4 @@
 
 #include "IDigitalInput.h"
 
-IDigitalInput::~IDigitalInput() { }
+IDigital_input::~IDigital_input() = default;  

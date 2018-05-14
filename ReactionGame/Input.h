@@ -2,10 +2,10 @@
 
 #include "IDigitalInput.h"
 
-class Dummy_input final : public IDigitalInput {
+class Input final : public IDigital_input {
 public:
 	// constructor, default initial state is off
-	Dummy_input();
+	Input();
 
 	virtual bool read(int pin) override;
 
@@ -15,9 +15,9 @@ public:
 
 	virtual void buttonISR() override;
 
-	virtual bool button() override;
+	virtual bool get_button() override;
 
-	virtual int time() override;
+	virtual int time_point() override;
 
 	virtual void buttonISR_reset() override;
 

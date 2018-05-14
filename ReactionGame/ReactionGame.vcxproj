@@ -51,25 +51,23 @@
     </RemotePostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DummyGameStatistic.cpp" />
-    <ClCompile Include="DummyInput.cpp" />
-    <ClCompile Include="DummyPlayer.cpp" />
+    <ClCompile Include="GameStatistic.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Pin_control.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="IDigitalInput.cpp" />
     <ClCompile Include="IDigitalOutput.cpp" />
-    <ClCompile Include="IGameStatistic.cpp" />
-    <ClCompile Include="IPlayer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="DummyOutput.cpp" />
+    <ClCompile Include="Output.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DummyGameStatistic.h" />
-    <ClInclude Include="DummyInput.h" />
-    <ClInclude Include="DummyPlayer.h" />
+    <ClInclude Include="GameStatistic.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Pin_control.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="IDigitalInput.h" />
     <ClInclude Include="IDigitalOutput.h" />
-    <ClInclude Include="DummyOutput.h" />
-    <ClInclude Include="IGameStatistic.h" />
-    <ClInclude Include="IPlayer.h" />
+    <ClInclude Include="Output.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

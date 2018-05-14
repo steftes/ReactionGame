@@ -1,6 +1,6 @@
 #pragma once
 
-class IDigitalInput {
+class IDigital_input {
 public:
 	virtual bool read(int pin) = 0;
 
@@ -10,12 +10,12 @@ public:
 
 	virtual void buttonISR() = 0;
 
-	virtual bool button() = 0;
+	virtual bool get_button() = 0; 
 
-	virtual int time() = 0;
+	virtual int time_point() = 0; 
 
 	virtual void buttonISR_reset() = 0;
 
 	// virtual destructor, as always!
-	virtual ~IDigitalInput() = 0;
+	virtual ~IDigital_input() = 0;
 };
