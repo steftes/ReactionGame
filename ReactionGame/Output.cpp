@@ -1,5 +1,5 @@
 #include "Output.h"
-#include <wiringPi.h>
+#include "piproxy.h"
 #include <iostream>
 
 Output::Output(bool initial_state /* = false */) : out_state_{ initial_state }

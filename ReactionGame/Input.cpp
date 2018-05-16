@@ -1,6 +1,6 @@
 
 #include "Input.h"
-#include <wiringPi.h>
+#include "piproxy.h"
 #include <iostream>
 #include <chrono>
 

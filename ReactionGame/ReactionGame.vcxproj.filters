@@ -18,5 +18,6 @@
     <ClInclude Include="Output.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Pin_control.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\piproxy.h" />
   </ItemGroup>
 </Project>

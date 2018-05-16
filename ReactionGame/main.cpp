@@ -1,5 +1,6 @@
-#include <wiringPi.h>
+#include "piproxy.h"
 #include <iostream>
+#include <string>
 #include "Output.h"
 #include "IDigitalOutput.h"
 #include "Input.h"
@@ -50,7 +51,7 @@ Game_statistic stats;
 
 // Pin check
 Pin_control pin_control;
-bool pin_check_end;
+bool pin_check_end = true;
 
 int game = 1; // State Machine
 

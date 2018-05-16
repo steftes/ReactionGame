@@ -1,7 +1,8 @@
 #include "Pin_control.h"
-#include <wiringPi.h>
+#include "piproxy.h"
 #include <iostream>
 
+int Pin_control::pin_to_control_ = 0;
 
 Pin_control::Pin_control() = default;
 

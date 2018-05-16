@@ -1,4 +1,5 @@
-#include <wiringPi.h>
+#include "piproxy.h"
+#include <string>
 #include <iostream>
 #include "Player.h"
 

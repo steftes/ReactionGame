@@ -61,6 +61,7 @@
     <ClCompile Include="Output.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Desktop\piproxy.h" />
     <ClInclude Include="GameStatistic.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Pin_control.h" />

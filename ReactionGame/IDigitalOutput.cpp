@@ -1,4 +1,4 @@
-#include <wiringPi.h>
+#include "piproxy.h"
 #include <iostream>
 
 #include "IDigitalOutput.h"
