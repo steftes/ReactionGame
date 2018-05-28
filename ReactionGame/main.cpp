@@ -165,7 +165,7 @@ void start()
 
 	// maximum rounds
 	std::cout << "Maximum rounds: ";
-	stats.max_rounds_init();
+//	stats.max_rounds_init();
 
 	game = COUNTDOWN;
 }

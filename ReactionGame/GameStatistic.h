@@ -5,7 +5,7 @@ public:
 	// constructor, default initial state is off
 	Game_statistic();
 
-	virtual void max_rounds_init();
+	virtual void max_rounds_init(int rounds);
 
 	virtual int max_rounds();
 
@@ -26,9 +26,9 @@ public:
 	virtual void stats_reset();
 
 private:
-	int rounds_left_ = 0;
-	int max_rounds_ = 0;
-	int current_round_ = 0;;
-	int won_pl1_ = 0;
-	int won_pl2_ = 0;
+	int rounds_left_;
+	int max_rounds_;
+	int current_round_;
+	int won_pl1_;
+	int won_pl2_;;
 };

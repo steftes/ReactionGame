@@ -7,11 +7,16 @@
 
 Game_statistic::Game_statistic() 
 {
+	rounds_left_ = 0;
+	max_rounds_ = 0;
+	current_round_ = 0;
+	won_pl1_ = 0;
+	won_pl2_ = 0;
 }
 
-void Game_statistic::max_rounds_init()
+void Game_statistic::max_rounds_init(int rounds)
 {
-	std::cin >> max_rounds_; // MFA this might fail, you might want to handle this
+	max_rounds_ = rounds; 
 }
 
 int Game_statistic::max_rounds()
