@@ -315,17 +315,17 @@ void stats1()
 	button_pl2.buttonISR_reset();
 
 	std::cout << "\n" << stats.rounds_left() << " Rounds left.\n";
-	std::cout << "Won games " << player1.get_name() << ": " << stats.won_games_pl1() << "\n";
-	std::cout << "Won games " << player2.get_name() << ": " << stats.won_games_pl2() << "\n";
+	std::cout << "Won games " << player1.get_name() << ": " << stats.won_games_pl1_cnt() << "\n";
+	std::cout << "Won games " << player2.get_name() << ": " << stats.won_games_pl2_cnt() << "\n";
 	delay(4000);
 
 
-	if ((stats.won_games_pl1() > (stats.max_rounds() / 2)) || (stats.won_games_pl2() > (stats.max_rounds() / 2)) || (stats.rounds_left() == 0))
+	if ((stats.won_games_pl1_cnt() > (stats.max_rounds() / 2)) || (stats.won_games_pl2_cnt() > (stats.max_rounds() / 2)) || (stats.rounds_left() == 0))
 	{
 		game = RESULT;
 
 		// winner blinks for 5 seconds
-		if (stats.won_games_pl1() > stats.won_games_pl2())
+		if (stats.won_games_pl1_cnt() > stats.won_games_pl2_cnt())
 		{
 			for (int s = 0; s < 25; s++)
 			{
@@ -335,7 +335,7 @@ void stats1()
 				delay(200);
 			}
 		}
-		else if (stats.won_games_pl1() < stats.won_games_pl2())
+		else if (stats.won_games_pl1_cnt() < stats.won_games_pl2_cnt())
 		{
 			for (int s = 0; s < 25; s++)
 			{
@@ -352,11 +352,11 @@ void stats1()
 void result()
 {
 	// who won
-	if (stats.won_games_pl1() > stats.won_games_pl2())
+	if (stats.won_games_pl1_cnt() > stats.won_games_pl2_cnt())
 	{
 		std::cout << player1.get_name() << " won the game!\n";
 	}
-	else if (stats.won_games_pl1() < stats.won_games_pl2())
+	else if (stats.won_games_pl1_cnt() < stats.won_games_pl2_cnt())
 		std::cout << player2.get_name() << " won the game!\n";
 	else
 		std::cout << "Draw\n";

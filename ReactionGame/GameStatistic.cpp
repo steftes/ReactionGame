@@ -19,18 +19,18 @@ void Game_statistic::max_rounds_init(int rounds)
 	max_rounds_ = rounds; 
 }
 
-int Game_statistic::get_max_rounds()
+int Game_statistic::max_rounds() const
 {
 	return max_rounds_;
 }
 
 
-int Game_statistic::get_won_games_pl1()
+int Game_statistic::won_games_pl1_cnt() const
 {
 	return won_pl1_;
 }
 
-int Game_statistic::get_won_games_pl2()
+int Game_statistic::won_games_pl2_cnt() const
 {
 	return won_pl2_;
 }
@@ -45,12 +45,12 @@ void Game_statistic::won_games_pl2_cnt_up()
 	won_pl2_++;
 }
 
-int Game_statistic::get_rounds_left()
+int Game_statistic::rounds_left() const
 {
 	return max_rounds_ - current_round_;
 }
 
-int Game_statistic::get_current_round()
+int Game_statistic::get_current_round() const
 {
 	return current_round_;
 }
